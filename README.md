@@ -24,6 +24,16 @@ bin ディレクトリを作ってその下に実行可能な ruby コードを�
 
 bundle install に --binstubs を追加すると実行したディレクトリに bin ディレクトリが出来る
 
+### sh ファイルにする
+
+    #!/bin/bash
+    export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH
+    cd /path/to/bundle/dir
+    ./bin/executable-sample
+
+cron 等、 rbenv にパスが通っていない場合にシステムの ruby (多分 1.8 とか) が使用されてエラーになる  
+まず PATH の設定を行い、更に rbenv local で .ruby-version ファイルを作成したディレクトリに cd した後、実行
+
 ## Contributing
 
 1. Fork it
