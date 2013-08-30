@@ -34,6 +34,9 @@ bundle install に --binstubs を追加すると実行したディレクトリ�
 cron 等、 rbenv にパスが通っていない場合にシステムの ruby (多分 1.8 とか) が使用されてエラーになる  
 まず PATH の設定を行い、更に rbenv local で .ruby-version ファイルを作成したディレクトリに cd した後、実行
 
+gem をインストールしたディレクトリのパスを含める必要があるので、 gem に含めるのは難しい  
+し、 gem に含まれている sh にアクセスするのが結構たいへん
+
 ## Contributing
 
 1. Fork it
