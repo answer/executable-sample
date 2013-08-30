@@ -16,6 +16,14 @@ And then execute:
 
     $ ./bin/executable-sample
 
+## つくりかた
+
+lib/executable-sample.rb 以下に、通常の gem と同様、コードを追加
+
+bin ディレクトリを作ってその下に実行可能な ruby コードを追加
+
+bundle install に --binstubs を追加すると実行したディレクトリに bin ディレクトリが出来る
+
 ## Contributing
 
 1. Fork it
