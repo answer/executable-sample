@@ -10,7 +10,7 @@ module Executable
       attr_reader :name
 
       def say(message)
-        puts "#{message}, #{name}"
+        puts "#{message}, #{name}!!"
       end
     end
   end
